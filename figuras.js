@@ -121,5 +121,20 @@ function CalcularAreaCirculo() {
 }
 
 
+// calculo de la altura de un triángulo 
+
+function altura (lado1,lado2,base) {
+if (lado1 == lado2) {
+    const mitadLadoTriangulo = base / 2;
+    const x = lado1 * lado1 - mitadLadoTriangulo * mitadLadoTriangulo;
+    return Math.sqrt(x);
+}
+else {
+    alert ("Tu triángulo no es isóceles")
+}
+}
+
+altura (6,6,4);
+
 
 
