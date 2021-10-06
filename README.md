@@ -11,3 +11,13 @@
 - Tercer paso: crear funciones
 
 - Cuarto paso: integrar Javascript con html
+
+## Taller #2: descuentos
+
+- Primer paso: definir las fórmulas
+
+- Segundo paso: implementar las formulas en Javascript
+
+- Tercer paso: crear funciones
+
+- Cuarto paso: integrar Javascript con html
