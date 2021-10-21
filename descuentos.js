@@ -28,3 +28,20 @@ function onClickButtonPriceDiscount() {
     const precioConDescuento = calcularPrecioConDescuento(priceValue,discountValue);
 }
 
+//cupones de descuento
+
+function calcularPrecioConCupon (precio, cupon) {
+    const porcentajePrecioConDescuento = 100 - cupon;
+    const precioConDescuento = (precio * porcentajePrecioConDescuento) / 100;
+    const result = document.getElementById("cuponResult");
+    result.innerText = `¡El precio con descuento del producto es de: ${precioConDescuento} pesos!`;
+}
+
+function onClickCupon () {
+    const inputPrice = document.getElementById("cuponPrice");
+    const priceValue = inputPrice.value;
+    const Cupon = document.getElementById("cupons");
+    const cupons = Cupon.value;
+
+    const precioConDescuento = calcularPrecioConCupon(priceValue,cupons);
+}

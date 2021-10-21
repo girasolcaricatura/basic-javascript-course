@@ -12,7 +12,7 @@
         Porcentajes y Decuentos
     </h1>
     <p>Este es el segundo taller del Curso Práctivco de JavaScript</p>
-    <section>
+    <section class="calculadora">
         <h2>Calcula el precio a pagar de tus productos con descuento</h2>
 
         <form>
@@ -21,8 +21,21 @@
             <label for="InputDiscount">Escribe el descuento de tu producto</label>
             <input id="InputDiscount" type="number">
             <button type="button" onclick="onClickButtonPriceDiscount()">Calcular el precio con descuento</button>
+            <p id="priceResult"></p>
         </form>
-        <p id="priceResult"></p>
+        <form>
+            <p>¿Tienes un cupón de descuento?</p>
+            <label for="">¿Cuál es el precio de tu producto?</label>
+            <input id="cuponPrice" type="number">
+            <label for="cupons">Escoge tu tipo de descuento:</label>
+            <select id="cupons">
+                <option value="15">15%</option>
+                <option value="20">20%</option>
+                <option value="25">25%</option>
+            </select>
+            <button  onclick="onClickCupon()" type="button"> Aceptar </button>
+            <p id="cuponResult"></p>
+        </form>
     </section>
 </body>
 </html>
