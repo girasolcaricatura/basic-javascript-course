@@ -36,7 +36,7 @@ function sacarMediana (lista) {
         return a - b;
     });
     
-    const mitadLista = parseInt(listaÑ.length / 2);
+    const mitadLista = parseInt(lista.length / 2);
     
     function esPar (listab) {
     if (listab % 2 === 0) {
@@ -49,14 +49,14 @@ function sacarMediana (lista) {
 
 let mediana;
 
-if (esPar(listaÑ.length)) {
-    const elemento1 = listaÑ[mitadLista -1];
-    const elemento2 = listaÑ[mitadLista];
+if (esPar(lista.length)) {
+    const elemento1 = lista[mitadLista -1];
+    const elemento2 = lista[mitadLista];
    const media = calcularMediaAritmetica([elemento1,elemento2])
     mediana = media;
 }
 else {
-    mediana = listaÑ[mitadLista];
+    mediana = lista[mitadLista];
 }
 return mediana;
 }
