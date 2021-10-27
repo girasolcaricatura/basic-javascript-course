@@ -158,6 +158,7 @@ function calcularMediaAritmetica (lista) {
       const elemento2 = lista[mitadLista];
      const media = calcularMediaAritmetica([elemento1,elemento2])
       mediana = media;
+      return mediana
   }
   else {
       mediana = lista[mitadLista];
