@@ -71,14 +71,16 @@ function CalcularPerimetroCuadrado() {
     const inputLadoCuadrado = document.getElementById("InputLadoCuadrado");
     const ladoCuadrado = inputLadoCuadrado.value;
     const resultadoPerimetroCuadrado = ladoCuadrado * 4;
-    alert("¡El Perímetro del Cuadrado es " + resultadoPerimetroCuadrado + "!");
+    const squareResult = document.getElementById("squareResult");
+    squareResult.innerText = "¡El Perímetro del Cuadrado es " + resultadoPerimetroCuadrado + "!";
 }
 
 function CalcularAreaCuadrado() {
     const inputLadoCuadrado = document.getElementById("InputLadoCuadrado");
     const ladoCuadrado = inputLadoCuadrado.value;
     const resultadoPerimetroCuadrado = ladoCuadrado * ladoCuadrado;
-    alert("¡El Área del Cuadrado es " + resultadoPerimetroCuadrado + "!");
+    const squareResult = document.getElementById("squareResult");
+    squareResult.innerText = "¡El Área del Cuadrado es " + resultadoPerimetroCuadrado + "!";
 }
 //Triangulo 
 
@@ -135,6 +137,8 @@ else {
 }
 
 altura (6,6,4);
+
+
 
 
 

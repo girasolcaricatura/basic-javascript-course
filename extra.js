@@ -1,15 +1,34 @@
 // Para sacar la brecha salarial, es necesario dividir a hombres y mujeres y sacar la media del total del salario de c/u.
 
-const maleFilter = colombia.map(
-    (males) => {
-    if (males.gender == "Male") {
-        return males.salary;
-    };
-});
+// usando filter + map:
 
-const femaleFilter = colombia.map (
+const maleFilter = colombia.filter(
+    (males) => {
+        return males.gender === "Male"
+    })
+    .map ((males) => males.salary);
+
+const femaleFilter = colombia.filter(
     (females) => {
-        if (females.gender == "Female") {
-            return females.salary;
-        }
-    });
+        return females.gender === "Female"
+    })
+    .map ((females) => females.salary);
+    
+
+
+// sacando el total:
+
+const totalFemale = femaleFilter.reduce ((acumulador,numero) => {
+    return acumulador + numero;
+}, 0);
+
+const totalMale = maleFilter.reduce ((acumulador,numero) => {
+    return acumulador + numero;
+}, 0);
+
+// sacando la media
+
+const mediaMale = (totalMale / maleFilter.length);
+
+const mediaFemale = (totalFemale / femaleFilter.length);
+
