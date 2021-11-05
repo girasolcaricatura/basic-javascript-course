@@ -1,4 +1,4 @@
-//código del cuadrado, ahora en funciones
+/* //código del cuadrado, ahora en funciones
 
 console.group ("Cuadrados");
 
@@ -61,7 +61,7 @@ function areaCirculo (radio) {
 }
 
 
-console.groupEnd;
+console.groupEnd; */
 
 // Aquí interactuamos con HTML
 
@@ -72,7 +72,7 @@ function CalcularPerimetroCuadrado() {
     const ladoCuadrado = inputLadoCuadrado.value;
     const resultadoPerimetroCuadrado = ladoCuadrado * 4;
     const squareResult = document.getElementById("squareResult");
-    squareResult.innerText = "¡El Perímetro del Cuadrado es " + resultadoPerimetroCuadrado + "!";
+    squareResult.innerText = "¡El Perímetro del Cuadrado es: " + resultadoPerimetroCuadrado + "cm!";
 }
 
 function CalcularAreaCuadrado() {
@@ -80,7 +80,7 @@ function CalcularAreaCuadrado() {
     const ladoCuadrado = inputLadoCuadrado.value;
     const resultadoPerimetroCuadrado = ladoCuadrado * ladoCuadrado;
     const squareResult = document.getElementById("squareResult");
-    squareResult.innerText = "¡El Área del Cuadrado es " + resultadoPerimetroCuadrado + "!";
+    squareResult.innerText = "¡El Área del Cuadrado es: " + resultadoPerimetroCuadrado + "cm!";
 }
 //Triangulo 
 
@@ -92,7 +92,7 @@ function CalcularPerimetroTriangulo() {
     const lado2 = inputLado2Triangulo.value;
     const base = inputBaseTriangulo.value;
     const resultadoPerimetroTriangulo = Number(lado1) + Number(lado2) + Number(base);
-    alert("¡El Perímetro del Triángulo es " + resultadoPerimetroTriangulo + "!");
+    alert("¡El Perímetro del Triángulo es: " + resultadoPerimetroTriangulo + "!");
 }
 
 function CalcularAreaTriangulo() {
@@ -101,7 +101,7 @@ function CalcularAreaTriangulo() {
     const base = inputBaseTriangulo.value;
     const altura = inputAlturaTriangulo.value;
     const resultadoAreaTriangulo = base * altura / 2;
-    alert("¡El Área del Triángulo es " + resultadoAreaTriangulo + "!");
+    alert("¡El Área del Triángulo es: " + resultadoAreaTriangulo + "!");
 
 
 }
