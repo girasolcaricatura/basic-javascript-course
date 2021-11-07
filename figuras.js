@@ -72,7 +72,7 @@ function CalcularPerimetroCuadrado() {
     const ladoCuadrado = inputLadoCuadrado.value;
     const resultadoPerimetroCuadrado = ladoCuadrado * 4;
     const squareResult = document.getElementById("squareResult");
-    squareResult.innerText = "¡El Perímetro del Cuadrado es: " + resultadoPerimetroCuadrado + "cm!";
+    squareResult.innerText = "The perimeter of your square is: " + resultadoPerimetroCuadrado + "cm!";
 }
 
 function CalcularAreaCuadrado() {
@@ -80,7 +80,7 @@ function CalcularAreaCuadrado() {
     const ladoCuadrado = inputLadoCuadrado.value;
     const resultadoPerimetroCuadrado = ladoCuadrado * ladoCuadrado;
     const squareResult = document.getElementById("squareResult");
-    squareResult.innerText = "¡El Área del Cuadrado es: " + resultadoPerimetroCuadrado + "cm!";
+    squareResult.innerText = "The area of your square is: " + resultadoPerimetroCuadrado + "cm!";
 }
 //Triangulo 
 
