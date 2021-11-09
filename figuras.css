@@ -83,6 +83,8 @@ footer {
     position: sticky;
     bottom: 0;
     background-color: var(--yellow);
+    box-shadow:  -2px -20px 31px -5px rgba(0, 0, 0, 0.24);
+-webkit-box-shadow:  -2px -20px 31px -5px rgba(0, 0, 0, 0.24);
 }
 footer nav {
     display: flex;
