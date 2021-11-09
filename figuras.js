@@ -71,8 +71,9 @@ else {
     alert ("Tu triángulo no es isóceles")
 }
 }
-
-altura (6,6,4);
+function hideNav() {
+    document.getElementById("nav").style.display="none";
+}
 
 
 
