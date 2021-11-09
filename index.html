@@ -23,7 +23,8 @@
         <h2>SQUARE</h2>
         <form action="">
             <label class="square-ask" for="InputLadoCuadrado">How long is each side of your square?</label>
-            <input id="InputLadoCuadrado" onclick="hideNav()"; placeholder="" type="number">
+            <input id="InputLadoCuadrado" onmouseover="hideNav()"
+            onmouseout="showNav()" placeholder="" type="number">
             <br>
             <div class="squareButtons">
             <button onclick="CalcularPerimetroCuadrado()" type="button">Get Perimeter</button>
@@ -37,7 +38,7 @@
         <form action="">
             <label class="square-ask" for="InputLadoCuadrado">How long is each side of your square?</label>
             <input class="placeInput"
-            onclick="hideNav()";  id="InputLadoCuadrado" placeholder="" type="number">
+          id="InputLadoCuadrado" placeholder="" onmouseover="hideNav()" onmouseout="showNav()" type="number">
             <br>
             <div class="squareButtons">
             <button onclick="CalcularPerimetroCuadrado()" type="button">Get Perimeter</button>
