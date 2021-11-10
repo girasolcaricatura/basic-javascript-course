@@ -79,6 +79,19 @@ main form .square-ask {
     font-family: 'Patua One', cursive;
     font-size: 2rem;
 }
+.cuadrado .upsideSquare {
+    display: flex;
+    align-items: center;
+}
+.cuadrado .upsideSquare .square-icon {
+    background-image: url(./images/square.png);
+    width: 33px;
+    height: 33px;
+    margin: 5px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 /* triangle */
 main .triangulo {
     width: 300px;
@@ -126,7 +139,19 @@ main form .triangle-ask {
     font-family: 'Patua One', cursive;
     font-size: 2rem;
 }
-
+.triangulo .upsideTriangle {
+    display: flex;
+    align-items: center;
+}
+.triangulo .upsideTriangle .triangle-icon {
+    background-image: url(./images/triangle.png);
+    width: 33px;
+    height: 33px;
+    margin: 5px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 /* circle */
 main .circulo {
     width: 300px;
@@ -141,13 +166,13 @@ main .circulo {
     font-family:'Patua One', cursive;
     font-size: 2.5rem;
 }
-main form .square-ask {
+main form .circle-ask {
     font-family:'Patua One', cursive;
     font-weight: lighter;
     font-size: 2rem;
     color: #000;
 }
-#InputLadoCuadrado {
+#InputCircle {
     border-radius: 4px;
     height: 23px;
     width: 100px;
@@ -162,10 +187,23 @@ main form .square-ask {
     border-radius: 4px;
     border: solid 3px;
 }
-#squareResult {
+#circleResult {
     margin-top: 10px;
     font-family: 'Patua One', cursive;
     font-size: 2rem;
+}
+.circulo .upsideCircle {
+    display: flex;
+    align-items: center;
+}
+.circulo .upsideCircle .circle-icon {
+    background-image: url(./images/circle.png);
+    width: 33px;
+    height: 33px;
+    margin: 5px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
            /* footer */
 footer {

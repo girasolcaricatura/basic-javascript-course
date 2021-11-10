@@ -20,7 +20,9 @@
     </header>
     <main>
         <section class="cuadrado">
-        <h2>SQUARE</h2>
+        <div class="upsideSquare">
+        <span class="square-icon"></span><h2>SQUARE</h2>
+        </div>
         <form action="">
             <label class="square-ask" for="InputLadoCuadrado">How long is each side of your square?</label>
             <input id="InputLadoCuadrado" onmouseover="hideNav()"
@@ -35,8 +37,10 @@
     </section>
     
         <section class="triangulo">
-        <h2>TRIANGLE</h2>
-        <form action="">
+            <div class="upsideTriangle">
+            <span class="triangle-icon"></span><h2>TRIANGLE</h2>
+            </div>
+            <form action="">
             <label class="triangle-ask" for="InputTriangle">How long is each side of your triangle?</label>
             <br>
             <input id="InputTriangle1" onmouseover="hideNav()"
@@ -56,19 +60,22 @@
         <p id="triangleResult"></p>
     </section>
     
-        <section class="cuadrado">
-        <h2>CIRCLE</h2>
+        <section class="circulo">
+        <div class="upsideCircle">
+            <span class="circle-icon"></span><h2>CIRCLE</h2>
+        </div>
         <form action="">
-            <label class="square-ask" for="InputLadoCuadrado">How long is the radio of your circle?</label>
-            <input id="InputLadoCuadrado" onmouseover="hideNav()"
+            <label class="circle-ask" for="InputCircle">How long is the radio of your circle?</label>
+            <input id="InputCircle" onmouseover="hideNav()"
             onmouseout="showNav()" placeholder="" type="number">
             <br>
-            <div class="squareButtons">
-            <button onclick="CalcularPerimetroCuadrado()" type="button">Get Perimeter</button>
-            <button onclick="CalcularAreaCuadrado()" type="button">Get Area</button>
+            <div class="circleButtons">
+            <button onclick="CalcularPerimetroCirculo()" type="button">Get Perimeter</button>
+            <button onclick="CalcularAreaCirculo()" type="button">Get Area</button>
             </div>
+            <p class="circleResult"></p>
         </form>
-        <p id="squareResult"></p>
+        <p id="circleResult"></p>
     </section>
     
 </main>

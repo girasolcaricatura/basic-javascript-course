@@ -41,18 +41,20 @@ function CalcularAreaTriangulo() {
     //Circulo 
 
 function CalcularPerimetroCirculo() {
-    const inputRadioCirculo = document.getElementById("InputRadioCirculo");
+    const inputRadioCirculo = document.getElementById("InputCircle");
     const radio = inputRadioCirculo.value;
     const diametro = radio * 2;
     const resultadoPerimetroCirculo = diametro * Math.PI;
-    alert("¡La circunferencia del Círculo es " + resultadoPerimetroCirculo + "!");
+    const circleResult = document.getElementById("circleResult");
+    circleResult.innerText = "The circumference of your circle is " + resultadoPerimetroCirculo + " cm!";
 }
 
 function CalcularAreaCirculo() {
-    const inputRadioCirculo = document.getElementById("InputRadioCirculo");
+    const inputRadioCirculo = document.getElementById("InputCircle");
     const radio = inputRadioCirculo.value;
     const resultadoAreaCirculo = radio * radio * Math.PI;
-    alert("¡La circunferencia del Círculo es " + resultadoAreaCirculo + "!");
+    const circleResult = document.getElementById("circleResult");
+    circleResult.innerText = "The area of your circle is " + resultadoAreaCirculo + " cm!";
 }
 
 
@@ -68,6 +70,8 @@ else {
     alert ("Tu triángulo no es isóceles")
 }
 }
+
+// hideNav
 
 function hideNav() {
 document.getElementById("nav").style.display="none"; 
