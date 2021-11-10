@@ -33,26 +33,35 @@
         </form>
         <p id="squareResult"></p>
     </section>
-    <section class="cuadrado">
+    
+        <section class="triangulo">
         <h2>TRIANGLE</h2>
         <form action="">
-            <label class="square-ask" for="InputLadoCuadrado">How long is each side of your square?</label>
-            <input class="placeInput"
-          id="InputLadoCuadrado" placeholder="" onmouseover="hideNav()" onmouseout="showNav()" type="number">
+            <label class="triangle-ask" for="InputTriangle">How long is each side of your triangle?</label>
             <br>
+            <input id="InputTriangle1" onmouseover="hideNav()"
+            onmouseout="showNav()" placeholder="" type="number">
+            <span>,</span>
+            <input id="InputTriangle2" onmouseover="hideNav()"
+            onmouseout="showNav()" placeholder="" type="number">
+            <span>,</span>
+            <input id="InputTriangle3" onmouseover="hideNav()"
+            onmouseout="showNav()" placeholder="" type="number">
             <div class="squareButtons">
-            <button onclick="CalcularPerimetroCuadrado()" type="button">Get Perimeter</button>
-            <button onclick="CalcularAreaCuadrado()" type="button">Get Area</button>
+            <button onclick="CalcularPerimetroTriangulo()" type="button">Get Perimeter</button>
+            <button onclick="CalcularAreaTriangulo()" type="button">Get Area</button>
+            <button onclick="CalcularAreaCuadrado()" type="button">Get Height</button>
             </div>
         </form>
-        <p id="squareResult"></p>
+        <p id="triangleResult"></p>
     </section>
-    <section class="cuadrado">
+    
+        <section class="cuadrado">
         <h2>CIRCLE</h2>
         <form action="">
-            <label class="square-ask" for="InputLadoCuadrado">How long is each side of your square?</label>
-            <input class="placeInput"
-          id="InputLadoCuadrado" placeholder="" onmouseover="hideNav()" onmouseout="showNav()" type="number">
+            <label class="square-ask" for="InputLadoCuadrado">How long is the radio of your circle?</label>
+            <input id="InputLadoCuadrado" onmouseover="hideNav()"
+            onmouseout="showNav()" placeholder="" type="number">
             <br>
             <div class="squareButtons">
             <button onclick="CalcularPerimetroCuadrado()" type="button">Get Perimeter</button>
@@ -61,6 +70,7 @@
         </form>
         <p id="squareResult"></p>
     </section>
+    
 </main>
 <footer>
     <nav id="nav">
