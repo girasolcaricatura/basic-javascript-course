@@ -31,7 +31,7 @@ header .title {
 }
 main {
     background-color: var(--caramel);
-    height: 130vh;
+    height: 150vh;
     /* position: relative; */
     margin-top: 20px;
     display: flex;
