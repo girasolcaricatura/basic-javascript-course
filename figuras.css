@@ -9,15 +9,15 @@ html {
     font-size: 62.5%;
     scroll-behavior: smooth;
     background-color: var(--yellow);
-    scroll-snap-type: y;
-}
+/*     scroll-snap-type: y;
+ */}
 :root {
     --yellow: #ffcf5c;
     --caramel: #d19334;
 }
 html, body, main {
     block-size: 100%;
-  }
+}
 header {
     background-color: var(--caramel);
     width: 90%;
@@ -31,7 +31,7 @@ header .title {
 }
 main {
     background-color: var(--caramel);
-    min-height: 130vh;
+    min-height: 200vh;
     /* position: relative; */
     margin-top: 20px;
     display: flex;
@@ -42,7 +42,7 @@ main {
 
 main .cuadrado {
     width: 300px;
-    height: 200px;
+    /* min-height: 200px; */
     margin: 20px auto 0 auto;
     padding: 10px;
     border-radius: 11px;
@@ -155,7 +155,7 @@ main form .triangle-ask {
 /* circle */
 main .circulo {
     width: 300px;
-    height: 200px;
+    /* height: 200px; */
     margin: 20px auto 0 auto;
     padding: 10px;
     border-radius: 11px;
@@ -218,10 +218,9 @@ footer nav {
     justify-content: space-evenly;
 }
 footer nav .box {
-    width: 50px;
+ /*    width: 50px;
     height: 50px;
-    /* border: solid 2px #000; */
-    border-radius: 5px;
+    border-radius: 5px; */
     margin: 10px;
     display: flex;
     flex-direction: column;
@@ -230,9 +229,9 @@ footer nav .box {
 footer nav .box p {
     font-family: 'Patua One', sans-serif;
     text-align: center;
-
+    margin: 3px;
 }
-footer nav .box .salary {
+footer nav .salary span {
     background-image: url(./images/money_coins.png);
     width: 40px;
     height: 40px;
@@ -240,7 +239,7 @@ footer nav .box .salary {
     background-position: center;
     background-repeat: no-repeat;
 }
-footer nav .box .disscounts {
+footer nav .disscounts span {
     background-image: url(./images/money_interest.png);
     width: 40px;
     height: 40px;
@@ -248,7 +247,7 @@ footer nav .box .disscounts {
     background-position: center;
     background-repeat: no-repeat;
 }
-footer nav .box .home {
+footer nav .home span {
     background-image: url(./images/house_framework.png);
     width: 40px;
     height: 40px;
@@ -256,7 +255,10 @@ footer nav .box .home {
     background-position: center;
     background-repeat: no-repeat;
 }
-footer nav .box .figures {
+footer nav .figura {
+    background-color: #FFE9B9;
+}
+footer nav .figures span {
     background-image: url(./images/shapes-figures.png);
     width: 40px;
     height: 40px;
@@ -264,7 +266,7 @@ footer nav .box .figures {
     background-position: center;
     background-repeat: no-repeat;
 }
-footer nav .box .paygap {
+footer nav .paygap span {
     background-image: url(./images/podium.png);
     width: 40px;
     height: 40px;
