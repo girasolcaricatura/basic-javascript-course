@@ -14,6 +14,7 @@ html {
 :root {
     --yellow: #ffcf5c;
     --caramel: #d19334;
+    --milk: #FFE9B9;
 }
 html, body, main {
     block-size: 100%;
@@ -110,6 +111,12 @@ main form .triangle-ask {
     font-family:'Patua One', cursive;
     font-weight: lighter;
     font-size: 2rem;
+    color: #000;
+}
+.triangulo form .triangleAskSides {
+    font-family:'Patua One', cursive;
+    font-weight: lighter;
+    font-size: 1.4rem;
     color: #000;
 }
 .triangulo form input {
@@ -221,7 +228,7 @@ footer nav .box {
  /*    width: 50px;
     height: 50px;
     border-radius: 5px; */
-    margin: 10px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -255,8 +262,10 @@ footer nav .home span {
     background-position: center;
     background-repeat: no-repeat;
 }
-footer nav .figura {
-    background-color: #FFE9B9;
+footer nav .figures {
+    background-color: var(--milk);
+    border-radius: 5px;
+
 }
 footer nav .figures span {
     background-image: url(./images/shapes-figures.png);

@@ -18,7 +18,7 @@
             Hello,  👋 <br>
             welcome to the geometric figure calculator.       </h1>
     </header>
-    <main>
+<main>
         <section class="cuadrado">
         <div class="upsideSquare">
         <span class="square-icon"></span><h2>SQUARE</h2>
@@ -41,22 +41,24 @@
             <span class="triangle-icon"></span><h2>TRIANGLE</h2>
             </div>
             <form action="">
-            <label class="triangle-ask">How long is each side of your triangle?</label>
-            <br>
-            <input id="InputTriangle1" onmouseover="hideNav()"
-            onmouseout="showNav()" placeholder="" type="number">
-            <span>,</span>
-            <input id="InputTriangle2" onmouseover="hideNav()"
-            onmouseout="showNav()" placeholder="" type="number">
-            <span>,</span>
-            <input id="InputTriangle3" onmouseover="hideNav()"
-            onmouseout="showNav()" placeholder="" type="number">
-            <div class="squareButtons">
-            <button onclick="CalcularPerimetroTriangulo()" type="button">Get Perimeter</button>
-            <button onclick="CalcularAreaTriangulo()" type="button">Get Area</button>
-            <button onclick="CalcularAreaCuadrado()" type="button">Get Height</button>
-            </div>
-        </form>
+                <label class="triangle-ask">How long is each side of your triangle?</label>
+                <br>
+                <label class="triangleAskSides" for="">Base</label>
+
+                <input id="InputTriangle1" onmouseover="hideNav()"
+                onmouseout="showNav()" placeholder="" type="number">
+                <label for="" class="triangleAskSides">Sides</label>
+                <input id="InputTriangle2" onmouseover="hideNav()"
+                onmouseout="showNav()" placeholder="" type="number">
+                <span>,</span>
+                <input id="InputTriangle3" onmouseover="hideNav()"
+                onmouseout="showNav()" placeholder="" type="number">
+                <div class="squareButtons">
+                <button onclick="CalcularPerimetroTriangulo()" type="button">Get Perimeter</button>
+                <button onclick="CalcularAreaTriangulo()" type="button">Get Area</button>
+                <button onclick="altura()" type="button">Get Height</button>
+                </div>
+            </form>
         <p id="triangleResult"></p>
     </section>
     

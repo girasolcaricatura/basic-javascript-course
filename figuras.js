@@ -38,6 +38,27 @@ function CalcularAreaTriangulo() {
     const resultadoAreaTriangulo = base * altura / 2;
     triangleResult.innerText = "¡El Área del Triángulo es: " + resultadoAreaTriangulo + "!"};
 
+/* 
+function altura() {
+        const first = document.getElementById("InputTriangle2");
+        const side1 = first.value;
+        const second = document.getElementById("InputTriangle3");
+        const side2 = second.value;
+
+        if (side1 == side2) {
+        const third = document.getElementById("InputTriangle1");
+        const base = third.value;
+        const mitad = base / 2;
+        const operation = side1 * side1 - mitad * mitad;
+        const result = Math.sqrt(operation);
+        const triangleResult = document.getElementById("triangleResult");
+        triangleResult.innerText = "The perimeter of your square is: " + result + "cm!";
+        }
+    else {
+        triangleResult.innerText = `Sorry! Your triangle is not isoseles`;
+    }};
+     */
+
     //Circulo 
 
 function CalcularPerimetroCirculo() {
@@ -68,8 +89,29 @@ if (lado1 == lado2) {
 }
 else {
     alert ("Tu triángulo no es isóceles")
-}
-}
+}}
+
+function altura() {
+    const first = document.getElementById("InputTriangle2");
+    const side1 = first.value;
+    const second = document.getElementById("InputTriangle3");
+    const side2 = second.value;
+
+    if (side1 == side2) {
+    const third = document.getElementById("InputTriangle1");
+    const base = third.value;
+    const mitad = base / 2;
+    const operation = side1 * side1 - mitad * mitad;
+    const result = Math.sqrt(operation);
+    const triangleResult = document.getElementById("triangleResult");
+    triangleResult.innerText = "The height of your square is: " + result + "cm!";
+    }
+else {
+    triangleResult.innerText = `Sorry! Your triangle is not isoseles`;
+}};
+
+
+
 
 // hideNav
 
