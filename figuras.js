@@ -31,12 +31,16 @@ function CalcularPerimetroTriangulo() {
     triangleResult.innerText = "The perimeter of your triangle is : " + resultadoPerimetroTriangulo + "cm!"};
 
 function CalcularAreaTriangulo() {
-    const inputBaseTriangulo = document.getElementById("InputBaseTriangulo");
-    const inputAlturaTriangulo = document.getElementById("InputAlturaTriangulo");
-    const base = inputBaseTriangulo.value;
-    const altura = inputAlturaTriangulo.value;
-    const resultadoAreaTriangulo = base * altura / 2;
-    triangleResult.innerText = "¡El Área del Triángulo es: " + resultadoAreaTriangulo + "!"};
+    const baseTriangle = document.getElementById("InputTriangle1");
+    const side1Triangle = document.getElementById("InputTriangle2");
+    const side2Triangle = document.getElementById("InputTriangle3");
+
+    const base = baseTriangle.value;
+    const side1 = side1Triangle.value;
+    const side2 = side2Triangle.value;
+    const height = helpAltura(side1,side2,base);
+    const result = base * height / 2;
+    triangleResult.innerText = "The area of the triangle is: " + result + "cm!"};
 
 /* 
 function altura() {
@@ -81,15 +85,16 @@ function CalcularAreaCirculo() {
 
 // calculo de la altura de un triángulo 
 
-function altura (lado1,lado2,base) {
+function helpAltura (lado1,lado2,base) {
 if (lado1 == lado2) {
     const mitadLadoTriangulo = base / 2;
     const x = lado1 * lado1 - mitadLadoTriangulo * mitadLadoTriangulo;
     return Math.sqrt(x);
 }
 else {
-    alert ("Tu triángulo no es isóceles")
-}}
+    const triangleResult = document.getElementById("triangleResult");
+    triangleResult.innerText = `Sorry! Your triangle is not isoseles`;
+}};
 
 function altura() {
     const first = document.getElementById("InputTriangle2");
@@ -109,22 +114,3 @@ function altura() {
 else {
     triangleResult.innerText = `Sorry! Your triangle is not isoseles`;
 }};
-
-
-
-
-// hideNav
-
-function hideNav() {
-document.getElementById("nav").style.display="none"; 
-}
-
-function showNav() {
-document.getElementById("nav").style.display="flex"; 
-}
-
-
-
-
-
-

@@ -30,6 +30,9 @@ header .title {
     font-size: 3.6rem;
     padding: 10px;
 }
+header span { 
+    font-size: 3.6rem;
+}
 main {
     background-color: var(--caramel);
     min-height: 200vh;
