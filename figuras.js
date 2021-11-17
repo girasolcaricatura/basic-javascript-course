@@ -39,29 +39,16 @@ function CalcularAreaTriangulo() {
     const side1 = side1Triangle.value;
     const side2 = side2Triangle.value;
     const height = helpAltura(side1,side2,base);
+
+    if (side1 == side2) {
     const result = base * height / 2;
-    triangleResult.innerText = "The area of the triangle is: " + result + "cm!"};
-
-/* 
-function altura() {
-        const first = document.getElementById("InputTriangle2");
-        const side1 = first.value;
-        const second = document.getElementById("InputTriangle3");
-        const side2 = second.value;
-
-        if (side1 == side2) {
-        const third = document.getElementById("InputTriangle1");
-        const base = third.value;
-        const mitad = base / 2;
-        const operation = side1 * side1 - mitad * mitad;
-        const result = Math.sqrt(operation);
-        const triangleResult = document.getElementById("triangleResult");
-        triangleResult.innerText = "The perimeter of your square is: " + result + "cm!";
-        }
+    triangleResult.innerText = "The area of the triangle is: " + result + "cm!"
+    }
     else {
         triangleResult.innerText = `Sorry! Your triangle is not isoseles`;
-    }};
-     */
+    }
+};
+
 
     //Circulo 
 

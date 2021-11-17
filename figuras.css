@@ -29,6 +29,7 @@ header .title {
     font-family: 'Patua One', cursive;
     font-size: 3.6rem;
     padding: 10px;
+    font-weight: lighter;
 }
 header span { 
     font-size: 3.6rem;
