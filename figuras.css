@@ -15,6 +15,7 @@ html {
     --yellow: #ffcf5c;
     --caramel: #d19334;
     --milk: #FFE9B9;
+    --soft-black: #4b473c;
 }
 html, body, main {
     block-size: 100%;
