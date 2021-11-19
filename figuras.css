@@ -242,6 +242,10 @@ footer nav .box p {
     font-family: 'Patua One', sans-serif;
     text-align: center;
     margin: 3px;
+    color: #000;
+}
+footer nav a {
+    text-decoration: none;
 }
 footer nav .salary span {
     background-image: url(./images/money_coins.png);
