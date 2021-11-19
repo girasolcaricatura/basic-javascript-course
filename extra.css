@@ -30,6 +30,7 @@ header .title {
     font-size: 3.6rem;
     padding: 10px;
     font-weight: lighter;
+    color: var(--milk);
 }
 header span { 
     font-size: 3.6rem;
