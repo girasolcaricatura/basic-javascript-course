@@ -2,7 +2,7 @@
 
 // usando filter + map:
 
-const maleFilter = colombia.filter(
+const maleFilter = colombiaSalary.filter(
     (males) => {
         return males.gender === "Male"
     })
