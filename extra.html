@@ -19,67 +19,30 @@
             welcome to the pay gap calculator.</h1>       
     </header>
 <main>
-        <section class="cuadrado">
-        <div class="upsideSquare">
-        <span class="square-icon"></span><h2>SQUARE</h2>
+    <section class="select"> 
+        <div class="country-select">
+            <h2>Select your country:</h2>
+        <div class="box mexico">
+            <figure>
+                <img src="" alt="">
+                <span>méxico</span>
+            </figure>
         </div>
-        <form action="">
-            <label class="square-ask">How long is each side of your square?</label>
-            <input id="InputLadoCuadrado" onmouseover="hideNav()"
-            onmouseout="showNav()" placeholder="" type="number">
-            <br>
-            <div class="squareButtons">
-            <button onclick="CalcularPerimetroCuadrado()" type="button">Get Perimeter</button>
-            <button onclick="CalcularAreaCuadrado()" type="button">Get Area</button>
-            </div>
-        </form>
-        <p id="squareResult"></p>
-    </section>
-    
-        <section class="triangulo">
-            <div class="upsideTriangle">
-            <span class="triangle-icon"></span><h2>TRIANGLE</h2>
-            </div>
-            <form action="">
-                <label class="triangle-ask">How long is each side of your triangle?</label>
-                <br>
-                <label class="triangleAskSides" for="">Base</label>
-
-                <input id="InputTriangle1" onmouseover="hideNav()"
-                onmouseout="showNav()" placeholder="" type="number">
-                <label for="" class="triangleAskSides">Sides</label>
-                <input id="InputTriangle2" onmouseover="hideNav()"
-                onmouseout="showNav()" placeholder="" type="number">
-                <span>,</span>
-                <input id="InputTriangle3" onmouseover="hideNav()"
-                onmouseout="showNav()" placeholder="" type="number">
-                <div class="squareButtons">
-                <button onclick="CalcularPerimetroTriangulo()" type="button">Get Perimeter</button>
-                <button onclick="CalcularAreaTriangulo()" type="button">Get Area</button>
-                <button onclick="altura()" type="button">Get Height</button>
-                </div>
-            </form>
-        <p id="triangleResult"></p>
-    </section>
-    
-        <section class="circulo">
-        <div class="upsideCircle">
-            <span class="circle-icon"></span><h2>CIRCLE</h2>
+        <div class="box colombia">
+            <figure>
+                <img src="" alt="">
+                <span>colombia</span>
+            </figure>
         </div>
-        <form action="">
-            <label class="circle-ask">How long is the radio of your circle?</label>
-            <input id="InputCircle" onmouseover="hideNav()"
-            onmouseout="showNav()" placeholder="" type="number">
-            <br>
-            <div class="circleButtons">
-            <button onclick="CalcularPerimetroCirculo()" type="button">Get Perimeter</button>
-            <button onclick="CalcularAreaCirculo()" type="button">Get Area</button>
-            </div>
-            <p class="circleResult"></p>
-        </form>
-        <p id="circleResult"></p>
+        <div class="box peru">
+            <figure>
+                <img src="" alt="">
+                <span>peru</span>
+            </figure>
+        </div>
+        </div>
     </section>
-    
+</section>
 </main>
 <footer>
     <nav id="nav">

@@ -46,177 +46,31 @@ main {
     justify-content: flex-start;
 }
 
-main .cuadrado {
+
+main .country-select {
     width: 300px;
     /* min-height: 200px; */
     margin: 20px auto 0 auto;
     padding: 10px;
     border-radius: 11px;
     background-color: var(--yellow);
-    
+    display: flex;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    gap: 10px;
 }
-.cuadrado h2 {
-    font-family:'Patua One', cursive;
-    font-size: 2.5rem;
-}
-main form .square-ask {
-    font-family:'Patua One', cursive;
-    font-weight: lighter;
-    font-size: 2rem;
-    color: #000;
-}
-#InputLadoCuadrado {
-    border-radius: 4px;
-    height: 23px;
+
+main .country-select .box {
     width: 100px;
-    border: solid 3px;
-    vertical-align: 2px;
-    margin-left: 5px;
+    border: solid 1px red;
 }
-.cuadrado form button {
-    margin-top: 10px;
-    padding: 5px;
-    font-family:'Patua One', cursive;
-    border-radius: 4px;
-    border: solid 3px;
-}
-#squareResult {
-    margin-top: 10px;
-    font-family: 'Patua One', cursive;
-    font-size: 2rem;
-}
-.cuadrado .upsideSquare {
-    display: flex;
-    align-items: center;
-}
-.cuadrado .upsideSquare .square-icon {
-    background-image: url(./images/square.png);
-    width: 33px;
-    height: 33px;
-    margin: 5px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-/* triangle */
-main .triangulo {
-    width: 300px;
-    /* height: 200px; */
-    margin: 20px auto 0 auto;
-    padding: 10px;
-    border-radius: 11px;
-    background-color: var(--yellow);
-    
-}
-.triangulo h2 {
+
+.country-select h2 {
     font-family:'Patua One', cursive;
     font-size: 2.5rem;
 }
-main form .triangle-ask {
-    font-family:'Patua One', cursive;
-    font-weight: lighter;
-    font-size: 2rem;
-    color: #000;
-}
-.triangulo form .triangleAskSides {
-    font-family:'Patua One', cursive;
-    font-weight: lighter;
-    font-size: 1.4rem;
-    color: #000;
-}
-.triangulo form input {
-    border-radius: 4px;
-    height: 23px;
-    width: 60px;
-    border: solid 3px;
-    vertical-align: 2px;
-    margin-left: 5px;
-    margin-top: 10px;
-}
-.triangulo form span {
-    font-family:'Patua One', cursive;
-    font-weight: lighter;
-    font-size: 2rem;
-    color: #000;
-}
-.triangulo form button {
-    margin-top: 10px;
-    padding: 5px;
-    font-family:'Patua One', cursive;
-    border-radius: 4px;
-    border: solid 3px;
-}
-#triangleResult {
-    margin-top: 10px;
-    font-family: 'Patua One', cursive;
-    font-size: 2rem;
-}
-.triangulo .upsideTriangle {
-    display: flex;
-    align-items: center;
-}
-.triangulo .upsideTriangle .triangle-icon {
-    background-image: url(./images/triangle.png);
-    width: 33px;
-    height: 33px;
-    margin: 5px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-/* circle */
-main .circulo {
-    width: 300px;
-    /* height: 200px; */
-    margin: 20px auto 0 auto;
-    padding: 10px;
-    border-radius: 11px;
-    background-color: var(--yellow);
-    
-}
-.circulo h2 {
-    font-family:'Patua One', cursive;
-    font-size: 2.5rem;
-}
-main form .circle-ask {
-    font-family:'Patua One', cursive;
-    font-weight: lighter;
-    font-size: 2rem;
-    color: #000;
-}
-#InputCircle {
-    border-radius: 4px;
-    height: 23px;
-    width: 100px;
-    border: solid 3px;
-    vertical-align: 2px;
-    margin-left: 5px;
-}
-.circulo form button {
-    margin-top: 10px;
-    padding: 5px;
-    font-family:'Patua One', cursive;
-    border-radius: 4px;
-    border: solid 3px;
-}
-#circleResult {
-    margin-top: 10px;
-    font-family: 'Patua One', cursive;
-    font-size: 2rem;
-}
-.circulo .upsideCircle {
-    display: flex;
-    align-items: center;
-}
-.circulo .upsideCircle .circle-icon {
-    background-image: url(./images/circle.png);
-    width: 33px;
-    height: 33px;
-    margin: 5px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
+
            /* footer */
 footer {
     position: sticky;
