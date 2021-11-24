@@ -1,0 +1,295 @@
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    background-color: var(--yellow);
+/*     scroll-snap-type: y;
+ */}
+:root {
+    --yellow: #ffcf5c;
+    --caramel: #d19334;
+    --milk: #FFE9B9;
+    --soft-black: #4b473c;
+}
+html, body, main {
+    block-size: 100%;
+}
+header {
+    background-color: var(--caramel);
+    width: 90%;
+    margin: 10px auto 0 auto;
+    border-radius: 11px;
+}
+header .title {
+    font-family: 'Patua One', cursive;
+    font-size: 3.6rem;
+    padding: 10px;
+    font-weight: lighter;
+}
+header span { 
+    font-size: 3.6rem;
+}
+main {
+    background-color: var(--caramel);
+    min-height: 200vh;
+    /* position: relative; */
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+main .cuadrado {
+    width: 300px;
+    /* min-height: 200px; */
+    margin: 20px auto 0 auto;
+    padding: 10px;
+    border-radius: 11px;
+    background-color: var(--yellow);
+    
+}
+.cuadrado h2 {
+    font-family:'Patua One', cursive;
+    font-size: 2.5rem;
+}
+main form .square-ask {
+    font-family:'Patua One', cursive;
+    font-weight: lighter;
+    font-size: 2rem;
+    color: #000;
+}
+#InputLadoCuadrado {
+    border-radius: 4px;
+    height: 23px;
+    width: 100px;
+    border: solid 3px;
+    vertical-align: 2px;
+    margin-left: 5px;
+}
+.cuadrado form button {
+    margin-top: 10px;
+    padding: 5px;
+    font-family:'Patua One', cursive;
+    border-radius: 4px;
+    border: solid 3px;
+}
+#squareResult {
+    margin-top: 10px;
+    font-family: 'Patua One', cursive;
+    font-size: 2rem;
+}
+.cuadrado .upsideSquare {
+    display: flex;
+    align-items: center;
+}
+.cuadrado .upsideSquare .square-icon {
+    background-image: url(./images/square.png);
+    width: 33px;
+    height: 33px;
+    margin: 5px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* triangle */
+main .triangulo {
+    width: 300px;
+    /* height: 200px; */
+    margin: 20px auto 0 auto;
+    padding: 10px;
+    border-radius: 11px;
+    background-color: var(--yellow);
+    
+}
+.triangulo h2 {
+    font-family:'Patua One', cursive;
+    font-size: 2.5rem;
+}
+main form .triangle-ask {
+    font-family:'Patua One', cursive;
+    font-weight: lighter;
+    font-size: 2rem;
+    color: #000;
+}
+.triangulo form .triangleAskSides {
+    font-family:'Patua One', cursive;
+    font-weight: lighter;
+    font-size: 1.4rem;
+    color: #000;
+}
+.triangulo form input {
+    border-radius: 4px;
+    height: 23px;
+    width: 60px;
+    border: solid 3px;
+    vertical-align: 2px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+.triangulo form span {
+    font-family:'Patua One', cursive;
+    font-weight: lighter;
+    font-size: 2rem;
+    color: #000;
+}
+.triangulo form button {
+    margin-top: 10px;
+    padding: 5px;
+    font-family:'Patua One', cursive;
+    border-radius: 4px;
+    border: solid 3px;
+}
+#triangleResult {
+    margin-top: 10px;
+    font-family: 'Patua One', cursive;
+    font-size: 2rem;
+}
+.triangulo .upsideTriangle {
+    display: flex;
+    align-items: center;
+}
+.triangulo .upsideTriangle .triangle-icon {
+    background-image: url(./images/triangle.png);
+    width: 33px;
+    height: 33px;
+    margin: 5px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* circle */
+main .circulo {
+    width: 300px;
+    /* height: 200px; */
+    margin: 20px auto 0 auto;
+    padding: 10px;
+    border-radius: 11px;
+    background-color: var(--yellow);
+    
+}
+.circulo h2 {
+    font-family:'Patua One', cursive;
+    font-size: 2.5rem;
+}
+main form .circle-ask {
+    font-family:'Patua One', cursive;
+    font-weight: lighter;
+    font-size: 2rem;
+    color: #000;
+}
+#InputCircle {
+    border-radius: 4px;
+    height: 23px;
+    width: 100px;
+    border: solid 3px;
+    vertical-align: 2px;
+    margin-left: 5px;
+}
+.circulo form button {
+    margin-top: 10px;
+    padding: 5px;
+    font-family:'Patua One', cursive;
+    border-radius: 4px;
+    border: solid 3px;
+}
+#circleResult {
+    margin-top: 10px;
+    font-family: 'Patua One', cursive;
+    font-size: 2rem;
+}
+.circulo .upsideCircle {
+    display: flex;
+    align-items: center;
+}
+.circulo .upsideCircle .circle-icon {
+    background-image: url(./images/circle.png);
+    width: 33px;
+    height: 33px;
+    margin: 5px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+           /* footer */
+footer {
+    position: sticky;
+    bottom: 0;
+    background-color: var(--yellow);
+    box-shadow:  -2px -20px 31px -5px rgba(0, 0, 0, 0.24);
+-webkit-box-shadow:  -2px -20px 31px -5px rgba(0, 0, 0, 0.24);
+}
+footer nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+footer nav .box {
+ /*    width: 50px;
+    height: 50px;
+    border-radius: 5px; */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer nav .box p {
+    font-family: 'Patua One', sans-serif;
+    text-align: center;
+    margin: 3px;
+    color: #000;
+}
+footer nav a {
+    text-decoration: none;
+}
+footer nav .salary span {
+    background-image: url(./images/money_coins.png);
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+footer nav .disscounts span {
+    background-image: url(./images/money_interest.png);
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+footer nav .home span {
+    background-image: url(./images/house_framework.png);
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+footer nav .home {
+    background-color: var(--milk);
+    border-radius: 5px;
+
+}
+footer nav .figures span {
+    background-image: url(./images/shapes-figures.png);
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+footer nav .paygap span {
+    background-image: url(./images/podium.png);
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+

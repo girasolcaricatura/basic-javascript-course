@@ -1,8 +1,12 @@
 // Para sacar la brecha salarial, es necesario dividir a hombres y mujeres y sacar la media del total del salario de c/u.
 
-// usando filter + map:
 
-const maleFilter = colombiaSalary.filter(
+
+const paygapGenerator = (country) {
+   country = document.getElementById()
+
+// sacando el salario:
+const maleFilter = colombia.filter(
     (males) => {
         return males.gender === "Male"
     })
@@ -32,3 +36,15 @@ const mediaMale = (totalMale / maleFilter.length);
 
 const mediaFemale = (totalFemale / femaleFilter.length);
 
+
+// para sacar la difencia en porcentaje 
+
+if (mediaFemale < mediaMale) {
+    const decimal = (mediaMale - mediaFemale)
+    return (decimal / mediaMale) * 100
+}
+else {
+    const decimal = (mediaFemale - mediaMale)
+    return (decimal / mediaFemale) * 100
+};
+}
