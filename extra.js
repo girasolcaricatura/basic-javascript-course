@@ -2,17 +2,16 @@
 
 
 
-const paygapGenerator = (country) {
-   country = document.getElementById()
+const paygapGenerator = (country) => {
 
 // sacando el salario:
-const maleFilter = colombia.filter(
+const maleFilter = country.filter(
     (males) => {
         return males.gender === "Male"
     })
     .map ((males) => males.salary);
 
-const femaleFilter = colombia.filter(
+const femaleFilter = country.filter(
     (females) => {
         return females.gender === "Female"
     })
@@ -41,10 +40,14 @@ const mediaFemale = (totalFemale / femaleFilter.length);
 
 if (mediaFemale < mediaMale) {
     const decimal = (mediaMale - mediaFemale)
-    return (decimal / mediaMale) * 100
+    const payGapIs = (decimal / mediaMale) * 100
+    alert(`cowabonga brother the paygap is ${payGapIs}%`)
 }
 else {
     const decimal = (mediaFemale - mediaMale)
-    return (decimal / mediaFemale) * 100
+    const payGapIs = (decimal / mediaFemale) * 100
+    alert(`cowabonga brother the paygap is ${payGapIs}%`)
 };
 }
+
+paygapGenerator(colombia);
