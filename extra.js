@@ -38,16 +38,16 @@ const mediaFemale = (totalFemale / femaleFilter.length);
 
 // para sacar la difencia en porcentaje 
 
+
 if (mediaFemale < mediaMale) {
     const decimal = (mediaMale - mediaFemale)
     const payGapIs = (decimal / mediaMale) * 100
     alert(`cowabonga brother the paygap is ${payGapIs}%`)
 }
-else {
+else if (mediaMale < mediaFemale) {
     const decimal = (mediaFemale - mediaMale)
     const payGapIs = (decimal / mediaFemale) * 100
     alert(`cowabonga brother the paygap is ${payGapIs}%`)
 };
 }
 
-paygapGenerator(colombia);

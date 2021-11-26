@@ -102,6 +102,109 @@ colombia.push({
 });
 
 
+const peru = [];
+
+peru.push({
+  name: "Camila",
+  salary: 50,
+  gender: "Female",
+});
+peru.push({
+  name: "Jose",
+  salary: 100,
+  gender: "Male",
+});
+peru.push({
+  name: "Luisa",
+  salary: 100,
+  gender: "Female",
+});
+peru.push({
+  name: "Pedro",
+  salary: 100,
+  gender: "Male",
+});
+peru.push({
+  name: "Daniela",
+  salary: 220,
+  gender: "Female",
+});
+peru.push({
+  name: "Emiliano",
+  salary: 2000,
+  gender: "Male",
+});
+peru.push({
+  name: "Carla",
+  salary: 50,
+  gender: "Female",
+});
+peru.push({
+  name: "Luis",
+  salary: 150,
+  gender: "Male",
+});
+peru.push({
+  name: "Alicia",
+  salary: 100,
+  gender: "Female",
+});
+peru.push({
+  name: "Pedro",
+  salary: 2900,
+  gender: "Male",
+});
+peru.push({
+  name: "Julia",
+  salary: 3000,
+  gender: "Female",
+});
+peru.push({
+  name: "Roberto",
+  salary: 4000,
+  gender: "Male",
+});
+peru.push({
+  name: "Angélica",
+  salary: 4000,
+  gender: "Female",
+});
+peru.push({
+  name: "Victor",
+  salary: 400,
+  gender: "Male",
+});
+peru.push({
+  name: "Lorena",
+  salary: 600,
+  gender: "Female",
+});
+peru.push({
+  name: "Carolina",
+  salary: 600,
+  gender: "Female",
+});
+peru.push({
+  name: "Ricardo",
+  salary: 200,
+  gender: "Male",
+});
+peru.push({
+  name: "Nora",
+  salary: 900,
+  gender: "Female",
+});
+peru.push({
+  name: "Gisselle",
+  salary: 200,
+  gender: "Female",
+});
+peru.push({
+  name: "Billy Idol",
+  salary: 10000,
+  gender: "Male",
+});
+
 const mexico = [];
 
 mexico.push({
