@@ -54,21 +54,31 @@ main .country-select {
     padding: 10px;
     border-radius: 11px;
     background-color: var(--yellow);
-    display: flex;
+/*     display: flex;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
+    gap: 10px; */
+}
+main .countries {
+    display: flex;
     gap: 10px;
 }
-
 main .country-select .box {
-    width: 100px;
+    width: 500px;
+    height: 80px;
     border: solid 1px red;
+    border-radius: 5px;
+    margin: 10px 0 10px 0;
+    background-image: url(./images/mxFlag.png);
 }
-
 .country-select h2 {
     font-family:'Patua One', cursive;
     font-size: 2.5rem;
+}
+.country-select p {
+    font-family:'Patua One', cursive;
+    font-size: 2.3rem;
 }
 
            /* footer */

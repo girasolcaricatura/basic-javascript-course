@@ -38,18 +38,14 @@ const mediaFemale = (totalFemale / femaleFilter.length);
 
 // para sacar la difencia en porcentaje 
 
-
 if (mediaFemale < mediaMale) {
     const decimal = (mediaMale - mediaFemale)
     const payGapIs = (decimal / mediaMale) * 100
-    const textResult = document.getElementById("paygapResult");
-    textResult.innerText = `The pay gap from male to female in this country is ${payGapIs}%`;
+    alert(`cowabonga brother the paygap is ${payGapIs}%`)
 }
-else if (mediaMale < mediaFemale) {
+else {
     const decimal = (mediaFemale - mediaMale)
     const payGapIs = (decimal / mediaFemale) * 100
-    const textResult = document.getElementById("paygapResult");
-    textResult.innerText = `The pay gap from male to female in this country is ${payGapIs}%`;
+    alert(`cowabonga brother the paygap is ${payGapIs}%`)
 };
 }
-
