@@ -67,10 +67,28 @@ main .countries {
 main .country-select .box {
     width: 500px;
     height: 80px;
-    border: solid 1px red;
-    border-radius: 5px;
+/*     border: solid 1px red;
+    border-radius: 5px; */
     margin: 10px 0 10px 0;
-    background-image: url(./images/mxFlag.png);
+}
+main .country-select .mexico {
+    background-image: url(./images/mx.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+main .country-select .peru {
+    background-image: url(./images/peru.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main .country-select .colombia {
+    background-image: url(./images/col.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .country-select h2 {
     font-family:'Patua One', cursive;
