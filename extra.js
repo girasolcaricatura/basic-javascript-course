@@ -43,7 +43,16 @@ if (mediaFemale < mediaMale) {
     const decimal = (mediaMale - mediaFemale)
     const payGapIs = (decimal / mediaMale) * 100
     const textResult = document.getElementById("paygapResult");
-    textResult.innerText = `The pay gap from male to female in this country is ${payGapIs}%`;
+
+    if (country === colombia){ 
+     textResult.innerText = `The salary pay gap between male and female in Colombia is from ${payGapIs} %`;
+     }
+    if (country === mexico){ 
+     textResult.innerText = `The salary pay gap between male and female in México is from ${payGapIs} %`;
+     }
+    if (country === peru){ 
+     textResult.innerText = `The salary pay gap between male and female in Peru is from  ${payGapIs} %`;
+     }
 }
 else if (mediaMale < mediaFemale) {
     const decimal = (mediaFemale - mediaMale)
