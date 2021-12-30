@@ -96,12 +96,14 @@ main .country-select .colombia {
     font-family:'Patua One', cursive;
     font-size: 2.3rem;
 }
-.closeButton {
+main .select .closeButton {
     background-image: url(./images/noun-x-2289975.png);
+    width: 40px;
+    height: 40px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
+}  
            /* footer */
 footer {
     position: sticky;
