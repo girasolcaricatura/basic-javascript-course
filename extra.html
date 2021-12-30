@@ -15,25 +15,22 @@
     ░█▄▄░█▀▒░█░▀▄▄▒░░█▀░█▀█░█▒█▄▄ -->
     <header>
         <h1 class="title">
-            Get to know the salary pay-gap in your country.</h1>       
+            Know the salary pay-gap in your country.</h1>       
     </header>
 <main>
     <section class="select"> 
         <div class="country-select">
             <h2>Select your country:</h2>
-            <button  onclick="hideInfo()">less</button>
         <div class="countries">
         <div class="box mexico" id="mexicoClicked" onclick="paygapGenerator(mexico)">
-<!--             <p>México</p>
- -->        </div>
+         </div>
         <div class="box colombia" id="colombiaClicked" onclick="paygapGenerator(colombia)">
-<!--           <p>Colombia</p>
- -->        </div>
+        </div>
         <div class="box peru" id="peruClicked" onclick="paygapGenerator(peru)">
-            <!-- <p>Peru</p> -->
         </div>
         </div>
         <p id="paygapResult"></p>
+        <span class="closeButton" onclick="hideInfo()"></span>
         </div>
     </section>
 </main>
