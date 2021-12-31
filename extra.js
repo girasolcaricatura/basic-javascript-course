@@ -44,6 +44,8 @@ if (mediaFemale < mediaMale) {
     const payGapIs = (decimal / mediaMale) * 100
     const textResult = document.getElementById("paygapResult");
     textResult.style.display ="inherit"
+    const showCloseButton = document.getElementById("closeButton");
+    showCloseButton.style.display ="inline-block"
     if (country === colombia){ 
      textResult.innerText = `The salary pay gap between male and female in Colombia is from ${payGapIs} %`;
      }
@@ -59,12 +61,16 @@ else if (mediaMale < mediaFemale) {
     const payGapIs = (decimal / mediaFemale) * 100
     const textResult = document.getElementById("paygapResult");
     textResult.style.display ="inherit"
+    const showCloseButton = document.getElementById("closeButton");
+    showCloseButton.style.display ="inline-block"
     textResult.innerText = `The pay gap from male to female in this country is ${payGapIs}%`;
 };
 }
 
 const hideInfo = () => {
     document.getElementById("paygapResult").style.display ="none";
+    const stopCloseButton = document.getElementById("closeButton");
+    stopCloseButton.style.display ="none"
 }
 
 
